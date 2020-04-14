@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">currencyConvert</string>
+    <string name="title">Dollars-Bolivars Conversion</string>
+    <string name="txtHint">Number to Convert</string>
+    <string name = "txtDollarsToBolivars">Convert Dollars to Bolivars</string>
+    <string name = "txtBolivarsToDollars">Convert Bolivars to Dollars</string>
+    <string name = "txtButton">Convert Currency</string>
+</resources>

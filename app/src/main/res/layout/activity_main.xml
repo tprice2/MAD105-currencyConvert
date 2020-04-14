@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/idTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:autoSizeTextType="uniform"
+        android:text="@string/title"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.044" />
+
+    <EditText
+        android:id="@+id/idConvertNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:gravity="center_horizontal|center_vertical"
+        android:hint="@string/txtHint"
+        android:inputType="numberDecimal"
+        android:selectAllOnFocus="true"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idTitle"
+        app:layout_constraintVertical_bias="0.044" />
+
+    <RadioGroup
+        android:id="@+id/idRadioGrp1"
+        android:layout_width="209dp"
+        android:layout_height="169dp"
+        android:layout_marginBottom="136dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idConvertNumber"
+        app:layout_constraintVertical_bias="0.27" >
+
+        <RadioButton
+            android:id="@+id/idRBDollarsToBolivars"
+            android:layout_width="match_parent"
+            android:layout_height="84dp"
+            android:checked="true"
+            android:text="@string/txtDollarsToBolivars" />
+
+        <RadioButton
+            android:id="@+id/idRBBolivarsToDollars"
+            android:layout_width="match_parent"
+            android:layout_height="83dp"
+            android:text="@string/txtBolivarsToDollars" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/idBtnConvert"
+        android:layout_width="150dp"
+        android:layout_height="51dp"
+        android:text="@string/txtButton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idRadioGrp1"
+        app:layout_constraintVertical_bias="0.09" />
+
+    <TextView
+        android:id="@+id/idResult"
+        android:layout_width="316dp"
+        android:layout_height="79dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idBtnConvert"
+        app:layout_constraintVertical_bias="0.375" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
